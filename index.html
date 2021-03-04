@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+   
+    <section class="wrapper">
+        <header class="container header" id="home">
+            <h1><code>WEB DEV</code></h1>
+            <nav class="flex-nav">
+                <button class="menu">Menu</button>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About Me</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        <section class="container main">
+            <div>
+                <img src="../assets/code kid.png" width="300px" alt="code kid">
+            </div>
+            <form action="">
+                <label for="fullName">Full name</label><br>
+                <input type="text" placeholder="Enter your full name" id="fullName"><br>
+                <label for="telephone">Phone Number</label><br>
+                <input type="text" placeholder="Phone number"><br>
+                <button class="change">Submit</button>
+            </form>
+        </section>
+        <section class="container" id="about">
+            <h2>About me</h2>
+                <section class="about">
+                    <div>
+                        <h2>Hobby</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, repellendus qui libero earum aliquam praesentium minima adipisci aliquid incidunt? Exercitationem magnam quas temporibus repellat nesciunt ipsa animi id consequatur consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita non, voluptates provident tempore, odit deleniti similique amet eaque molestias, corrupti nobis! Architecto eum quibusdam et at enim repudiandae tenetur qui.</p>
+
+                    </div>
+                    <div>
+                        <h2>Academics</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, repellendus qui libero earum aliquam praesentium minima adipisci aliquid incidunt? Exercitationem magnam quas temporibus repellat nesciunt ipsa animi id consequatur consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita non, voluptates provident tempore, odit deleniti similique amet eaque molestias, corrupti nobis! Architecto eum quibusdam et at enim repudiandae tenetur qui.</p>
+                        
+                    </div>
+                    <div>
+                        <h2>Where I have worked</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, repellendus qui libero earum aliquam praesentium minima adipisci aliquid incidunt? Exercitationem magnam quas temporibus repellat nesciunt ipsa animi id consequatur consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita non, voluptates provident tempore, odit deleniti similique amet eaque molestias, corrupti nobis! Architecto eum quibusdam et at enim repudiandae tenetur qui.</p>
+                        
+                    </div>
+                </section>
+        </section>
+        <section class="container" id="blog">
+            <h2>Articles</h2>
+                <section class="about">
+                    <div>
+                        <h2>Article 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, repellendus qui libero earum aliquam praesentium minima adipisci aliquid incidunt? Exercitationem magnam quas temporibus repellat nesciunt ipsa animi id consequatur consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita non, voluptates provident tempore, odit deleniti similique amet eaque molestias, corrupti nobis! Architecto eum quibusdam et at enim repudiandae tenetur qui.</p>
+
+                    </div>
+                    <div>
+                        <h2>Article 2</h2>
+                        <p><img src="../assets/blackberry.jpg" alt="" width="70px"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, repellendus qui libero earum aliquam praesentium minima adipisci aliquid incidunt? Exercitationem magnam quas temporibus repellat nesciunt ipsa animi id consequatur consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita non, voluptates provident tempore, odit deleniti similique amet eaque molestias, corrupti nobis! Architecto eum quibusdam et at enim repudiandae tenetur qui.</p>
+                        
+                    </div>
+                    <div>
+                        <h2>Article 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, repellendus qui libero earum aliquam praesentium minima adipisci aliquid incidunt? Exercitationem magnam quas temporibus repellat nesciunt ipsa animi id consequatur consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita non, voluptates provident tempore, odit deleniti similique amet eaque molestias, corrupti nobis! Architecto eum quibusdam et at enim repudiandae tenetur qui.</p>
+                        
+                    </div>
+                </section>
+        </section>
+        <section class="container image">
+            <img src="../assets/house-1.jpg" alt="House 1">
+            <img src="../assets/house-2.jpg" alt="House 2">
+            <img src="../assets/interior-design-1.jpg" alt="Interior">
+        </section>
+        <footer>
+            <section class="contain">
+                <small>&copy; WEBDEV 1.0</small>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about">About Me</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </footer>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      
+      $(function() {
+        $('.menu').on('click',function() {
+          $('.flex-nav ul').slideToggle('open').fadeTo("fast", 0.5, () => {}).fadeTo('slow', 1, () => {});
+        });
+      });
+
+      $(function() {
+        $('.change').on('click',function() {
+          $('.container').toggleClass('toggle');
+        });
+      });
+  
+    </script>
+    
+</body>
+</html>
