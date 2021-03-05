@@ -9,6 +9,7 @@ body{
     background: rgb(26, 26, 26);
     background: black;
     color: rgb(216, 216, 216);
+font-family: 'Montserrat', sans-serif;
 }
 .container{
    max-width: 960px;
