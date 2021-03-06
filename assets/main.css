@@ -231,3 +231,31 @@ changebackground
     background:white;
 
 }
+/* 
+==============
+download
+============== */
+#download h2{
+    margin-top: 20px;
+    font-weight: 700;
+    animation-name: change;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease-in; */
+}
+#download a{
+    text-decoration: none;
+}
+
+@keyframes change{
+    0%{
+        color: rgb(173, 171, 171);
+    }
+    50%{
+        color: brown;
+    }
+    100%{
+        color: rgb(173, 171, 171);
+    }
+    
+}
